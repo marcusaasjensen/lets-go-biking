@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/ProxyCacheServer/JCDecauxService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Device.Location" />
+  <xs:import schemaLocation="http://localhost:8733/Design_Time_Addresses/ProxyCacheServer/JCDecauxService/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ProxyCacheServer.Proxy" />
+  <xs:element name="GetNearestAvailableStationFromCoordinate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.Device.Location" minOccurs="0" name="coordinate" nillable="true" type="q1:GeoCoordinate" />
+        <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOrigin" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNearestAvailableStationFromCoordinateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ProxyCacheServer.Proxy" minOccurs="0" name="GetNearestAvailableStationFromCoordinateResult" nillable="true" type="q2:Station" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
