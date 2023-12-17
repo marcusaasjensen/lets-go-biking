@@ -1,13 +1,11 @@
 # Lets Go Biking! 🚲
 School project designed to provide a convenient itinerary for cyclists traveling between two addresses with an integrated map.
 
-Enter valid source and destination addresses, the app will find the nearest JCDecaux stations for you to get a bicycle. The app will then show you all the steps you have to make, from walking to the station, get a bike, travel to the next station, then arrive at your finale destination. If taking a bicycle is too long, the app will show you the shortest itinerary by walking.
-
-A map opens up for you to visualize the itinerary and each small steps.
-
-The app works using REST and SOAP communications with the different providers such as JCDecaux, Open Route Service and Nominatim.
+The application functions as a self-hosted SOAP server on the server side, accompanied by a robust Java-based heavy client. Utilizing WCF servers, the app communicates through REST APIs and a routing service with proxy and cache, connecting seamlessly with providers like JCDecaux, Open Route Service, and Nominatim.
 
 ## Example 💻
+Enter valid source and destination addresses, the app will find the nearest JCDecaux stations for you to get a bicycle. The app will then show you all the steps you have to make, from walking to the station, get a bike, travel to the next station, and arrive at your finale destination. If taking a bicycle is too long, the app will show you the shortest itinerary by walking.
+
 Here is the app interface on the command prompt.
 ```
 Welcome to... Lets Go Biking!
@@ -20,15 +18,17 @@ When you enter the origin and the destination, you will get the entire itinerary
 
 You can save your itinerary in a text file.
 
+A map opens up for you to visualize the itinerary and each small steps.
 ## Map 🗺️
 Resulting map from Madrid to Paris itinerary.
 
-![map](./Assets/map_example.png)
-
-Legend
+> [!NOTE]
+> 
 >  🟦 Walking
 > 
 >  🟩 Bicycling
+
+![map](./Assets/map_example.png)
 
 # Installation ⬇️
 
@@ -46,7 +46,7 @@ OPEN_ROUTE_SERVICE_API_KEY=your_api_key
 JCDECAUX_API_KEY=your_api_key
 ```
 
-> [!NOTE]
+> [!TIP]
 > You can create accounts on both services to get your API keys.
 > 
 > JCDecaux API key: https://developer.jcdecaux.com/
