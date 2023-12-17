@@ -5,14 +5,21 @@ Enter valid source and destination addresses, the app will find the nearest JCDe
 
 A map opens up for you to visualize the itinerary and each small steps.
 
-## Example 💻
+The app works using REST and SOAP communications with the different providers such as JCDecaux, Open Route Service and Nominatim.
 
+## Example 💻
+Here is the app interface on the command prompt.
 ```
 Welcome to... Lets Go Biking!
 
 Enter origin (type 'q' to quit): paris
 Enter destination: madrid
+...
 ```
+When you enter the origin and the destination, you will get the entire itinerary on the command prompt (walking and cycling steps) with all the specifications about duration and distance.
+
+You can save your itinerary in a text file.
+
 ## Map 🗺️
 Resulting map from Madrid to Paris itinerary.
 
@@ -22,10 +29,6 @@ Legend
 >  🟦 Walking
 > 
 >  🟩 Bicycling
-
-You can save your itinerary in a text file.
-
-The app works using REST and SOAP communications with the different providers such as JCDecaux, Open Route Service and Nominatim.
 
 # Installation ⬇️
 
